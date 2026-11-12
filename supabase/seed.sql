@@ -1,0 +1,15 @@
+-- DEVELOPMENT ONLY: replace UUIDs with actual Auth user and agency IDs.
+-- Create the Auth user in Supabase Dashboard first.
+-- insert into public.profiles(id,email,full_name) values
+-- ('AUTH-USER-UUID','admin@example.com','Demo Admin');
+-- insert into public.agencies(name,slug,business_email,status)
+-- values ('Greenfield Realty','greenfield-realty','admin@example.com','active')
+-- returning id;
+-- insert into public.agency_memberships(agency_id,user_id,role,status)
+-- values ('AGENCY-UUID','AUTH-USER-UUID','agency_admin','active');
+--
+-- For platform owner:
+-- update public.profiles set platform_role='super_admin'
+-- where id='AUTH-USER-UUID';
+--
+-- Never use fixed demo passwords or commit real user IDs/secrets.
